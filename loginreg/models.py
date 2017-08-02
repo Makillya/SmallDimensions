@@ -6,14 +6,12 @@ from django.db import models
 class User(models.Model):
     first_name = models.CharField(max_length=15)
     last_name = models.CharField(max_length=25)
-    phone = models.CharField(max_length=10)
     email = models.CharField(max_length=60)
-    street = models.CharField(max_length=40)
-    apt = models.CharField(max_length=6)
-    city = models.CharField(max_length=25)
-    state = models.CharField(max_length=2)
-    zipcode = models.IntegerField()
-    status = models.CharField(max_length=7, default="pending")
+    password = models.CharField(max_length=30)
+    phone = models.CharField(max_length=10)
+    created_at = models.DateField(auto_now_add=True)
+    updated_at = models.DateField(auto_now=True)
+
 
 
 class Child(models.Model):
@@ -22,3 +20,5 @@ class Child(models.Model):
     last_name = models.CharField(max_length=25)
     birthdate  = models.DateField()
     parent = models.ManyToManyField(User, related_name="child")
+    created_at = models.DateField(auto_now_add=True)
+    updated_at = models.DateField(auto_now=True)
