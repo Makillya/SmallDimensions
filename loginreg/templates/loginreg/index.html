@@ -6,34 +6,145 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Small Dimensions</title>
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="../../static/loginreg/css/style.css">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <link rel="stylesheet" href="../../static/loginreg/css/bootstrap.css">
+    <!-- fontawesome goes here...if you want it -->
+    <link rel="stylesheet" href="../../static/loginreg/css/scrolling-nav.css">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+
   </head>
-  <body>
-    <header>
-      <h1>Welcome to Small Dimensions!</h1>
-    </header>
-
-    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
-        <p class="nav_item">About</p>
-        <p class="nav_item">Gallery</p>
-        <p class="nav_item">Pricing</p>
-        <p class="nav_item">Contact</p>
-      </div>
-    </nav>
+        <div class="navbar-header page-scroll">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand page-scroll" href="#page-top">Small Dimensions</a>
+        </div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav">
+            <li class="hidden">
+              <a class="page-scroll" href="#page-top"></a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#about">About</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#services">Services</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#staff">Staff</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#tuition">Tuition</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#contact">Contact Us</a>
+            </li>
+          </ul>
+        </div> <!-- navbar-collapse -->
+      </div> <!-- end container -->
+    </nav>
+    
+
+    <!-- Intro Section -->
+    <section id="intro" class="intro-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1>Welcome to Small Dimensions</h1>
+            <p><strong>Hello, there.</strong> Whatever. Lorem ipsum and some such. There'll be important stuff here.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1>About</h1>
+            <p><strong>Established in 1963</strong>, Small Dimensions Daycare &amp; Pre-School started as a small, family owned in-home center and then grew into a fully licensed child care center serving Bellevue, Washington area families for over 50 years. We're still family owned, and have maintained the same level of personalized, quality care and learning for children ages one through five.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1>Services</h1>
+            <ul>
+              <li>Our instructors are bilingual English/Spanish.</li>
+              <li>We teach the children beginning sign language to jump start their verbal development.</li>
+              <li>We offer small teacher to child ratios.</li>
+              <li>Our program is Montessori and Reggio inspired.</li>
+              <li>Our program is guided by the belief that children learn best through play, and as a result, we plan activities that are fun, interesting, and meaningful for the children.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Staff Section -->
+    <section id="staff" class="staff-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1>Staff</h1>
+            <p>Our caring, experienced staff is dedicated to meeting the individual needs of the children we care for. They're each highly qualified, making sure that your child thrives in our educational and playful environment, always putting your child's safety first.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tuition Section -->
+    <section id="tuition" class="tuition-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1>Tuition</h1>
+            <p>Our tuition rates are flexible and affordable, with daily rates for part time and full time enrollment.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1>Contact Us</h1>
+            <p><strong>ADDRESS --</strong> 11504 NE 19th St, Bellevue, WA 98004</p>
+            <p><strong>PHONE --</strong> 425-453-1216</p>
+            <p><strong>EMAIL --</strong> smalldimensions3@gmail.com</p>
+            <p><strong>HOURS --</strong> MON-FRI: 7:00AM - 6:00PM    SAT-SUN: Closed</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="../../static/loginreg/js/jquery-3.2.1.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../../static/loginreg/js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="../../static/loginreg/js/jquery.easing.min.js"></script>
+    <script src="../../static/loginreg/js/scrolling-nav.js"></script>
+
   </body>
 </html>
