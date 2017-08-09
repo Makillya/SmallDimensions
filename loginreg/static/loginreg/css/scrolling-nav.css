@@ -10,6 +10,8 @@ html {
     height: 100%;
 }
 
+
+/* ------------- Navbar Section ------------ */
 @media(min-width:767px) {
     .navbar {
         padding: 20px 0;
@@ -24,10 +26,22 @@ html {
     }
 }
 
+#sd-logo-slot {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+#sd-logo {
+    height: 50px;
+    width: 50px;
+}
+
 /* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
 The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children
 of those sections to manage the look and feel of the site. */
 
+
+/* ------------- Intro Section ------------ */
 .intro-section {
     height: 100%;
     padding-top: 150px;
@@ -35,13 +49,68 @@ of those sections to manage the look and feel of the site. */
     background: #fffafa
 }
 
+.intro-section h3 {
+    margin-top: 10px;
+}
+
+ /* dynamically centering hero text */
+#hero-text {
+    position: relative;
+    top: 40%;
+    transform: translateY(-40%);
+}
+
+
+/* ------------- About Section ------------ */
 .about-section {
     height: 100%;
     padding-top: 150px;
-    text-align: center;
+    text-align: left;
     background: #ffb3ba;
 }
 
+/* Main carousel style */
+.carousel {
+    margin-left: 11em;
+    width: 600px;
+}
+
+/* Indicators list style */
+.article-slide .carousel-indicators {
+    bottom: 0;
+    left: 6%;
+    margin-left: 1%;
+    width: 100%;
+}
+
+/* Indicators list style */
+.article-slide .carousel-indicators li {
+    border: medium none;
+    border-radius: 0;
+    float: left;
+    height: 54px;
+    margin-bottom: 5px;
+    margin-left: 0;
+    margin-right: 5px !important;
+    margin-top: 0;
+    width: 100px;
+}
+/* Indicators images style */
+.article-slide .carousel-indicators img {
+    border: 2px solid #FFFFFF;
+    float: left;
+    height: 54px;
+    left: 0;
+    width: 100px;
+}
+/* Indicators active image style */
+.article-slide .carousel-indicators .active img {
+    border: 2px solid #428BCA;
+    opacity: 0.7;
+}
+
+
+/* ------------- Services Section ------------ */
 .services-section {
     height: 100%;
     padding-top: 150px;
@@ -49,6 +118,8 @@ of those sections to manage the look and feel of the site. */
     background: #ffdfba;
 }
 
+
+/* ------------- Staff Section ------------ */
 .staff-section {
     height: 100%;
     padding-top: 150px;
@@ -56,6 +127,8 @@ of those sections to manage the look and feel of the site. */
     background: #ffffba;
 }
 
+
+/* ------------- Tuition Section ------------ */
 .tuition-section {
     height: 100%;
     padding-top: 150px;
@@ -63,6 +136,8 @@ of those sections to manage the look and feel of the site. */
     background: #baffc9;
 }
 
+
+/* ------------- Contact Section ------------ */
 .contact-section {
     height: 100%;
     padding-top: 150px;

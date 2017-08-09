@@ -17,3 +17,7 @@ $(function() {
         event.preventDefault();
     });
 });
+
+$('.carousel').carousel({
+  interval: false
+});
