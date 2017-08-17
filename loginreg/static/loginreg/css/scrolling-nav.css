@@ -10,6 +10,10 @@ html {
     height: 100%;
 }
 
+h1 {
+    font-size: 43px;
+}
+
 
 /* ------------- Navbar Section ------------ */
 @media(min-width:767px) {
@@ -36,15 +40,20 @@ html {
     width: 50px;
 }
 
-/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
+/* Demo Sections - The scroller will work with any sort of height, fixed, undefined, or percentage based.
 The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children
 of those sections to manage the look and feel of the site. */
 
+.content-container {
+    position: relative;
+    top: 40%;
+    transform: translateY(-40%);
+}
 
 /* ------------- Intro Section ------------ */
 .intro-section {
     height: 100%;
-    padding-top: 150px;
+    padding-top: 75px;
     text-align: center;
     background: #fffafa
 }
@@ -64,14 +73,14 @@ of those sections to manage the look and feel of the site. */
 /* ------------- About Section ------------ */
 .about-section {
     height: 100%;
-    padding-top: 150px;
+    padding-top: 75px;
     text-align: left;
     background: #ffb3ba;
 }
 
 /* Main carousel style */
 .carousel {
-    margin-left: 11em;
+    margin-left: 3em;
     width: 600px;
 }
 
@@ -113,16 +122,44 @@ of those sections to manage the look and feel of the site. */
 /* ------------- Services Section ------------ */
 .services-section {
     height: 100%;
-    padding-top: 150px;
-    text-align: left;
+    padding-top: 75px;
+    text-align: center;
     background: #ffdfba;
+}
+
+.service-unit {
+    width: 150px;
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.service-unit img {
+    height: 50px;
+    width: 50px;
+}
+
+#service-unit-top {
+    margin-top: 50px;
+}
+
+#service-unit-top .service-unit {
+    vertical-align: top;
+}
+
+#service-unit-bottom {
+    margin-top: 30px;
+}
+
+#service-unit-bottom .service-unit {
+    vertical-align: top;
 }
 
 
 /* ------------- Staff Section ------------ */
 .staff-section {
     height: 100%;
-    padding-top: 150px;
+    padding-top: 75px;
     text-align: center;
     background: #ffffba;
 }
@@ -131,7 +168,7 @@ of those sections to manage the look and feel of the site. */
 /* ------------- Tuition Section ------------ */
 .tuition-section {
     height: 100%;
-    padding-top: 150px;
+    padding-top: 75px;
     text-align: center;
     background: #baffc9;
 }
@@ -140,7 +177,20 @@ of those sections to manage the look and feel of the site. */
 /* ------------- Contact Section ------------ */
 .contact-section {
     height: 100%;
-    padding-top: 150px;
-    text-align: center;
+    padding-top: 75px;
+    text-align: left;
     background: #bae1ff;
 }
+
+#contact-left {
+    display: inline-block;
+}
+
+#contact-middle {
+    display: inline-block;
+}
+
+#map {
+    display: inline-block;
+}
+
