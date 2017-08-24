@@ -164,6 +164,22 @@
           <div class="col-lg-12">
             <h1>Staff</h1>
             <p>Our caring, experienced staff is dedicated to meeting the individual needs of the children we care for. They're each highly qualified, making sure that your child thrives in our educational and playful environment, always putting your child's safety first.</p>
+            <div id="jen" class="staff-unit">
+              <img class="staff-pic" src="../../static/loginreg/images/jen.jpeg" alt="">
+              <p>Leonardo leads</p>
+            </div>
+            <div id="paola" class="staff-unit">
+              <img class="staff-pic" src="../../static/loginreg/images/paola.jpeg" alt="">
+              <p>Donatello does machines</p>
+            </div>
+            <div id="estela" class="staff-unit">
+              <img class="staff-pic" src="../../static/loginreg/images/estela.jpeg" alt="">
+              <p>Rafael is cool but rude</p>
+            </div>
+            <div id="brittany" class="staff-unit">
+              <img class="staff-pic" src="../../static/loginreg/images/brittany.jpeg" alt="">
+              <p>Michaelangelo is a party dude</p>
+            </div>
           </div>
         </div>
       </div>
@@ -191,14 +207,28 @@
               <img src="../../static/loginreg/images/daycare_stock.jpg" alt="">
             </div>
             <div id="contact-middle">
-              <p><strong>ADDRESS --</strong> 11504 NE 19th St, Bellevue, WA 98004</p>
-              <p><strong>PHONE --</strong> 425-453-1216</p>
-              <p><strong>EMAIL --</strong> smalldimensions3@gmail.com</p>
-              <p><strong>HOURS --</strong> MON-FRI: 7:00AM - 6:00PM    SAT-SUN: Closed</p>
+              <h4><strong>ADDRESS --</strong> 11504 NE 19th St, Bellevue, WA 98004</h4>
+              <h4><strong>PHONE --</strong> 425-453-1216</h4>
+              <h4><strong>EMAIL --</strong> smalldimensions3@gmail.com</h4>
+              <h4><strong>HOURS --</strong> MON-FRI: 7:00AM - 6:00PM</h4>
+              <h4>SAT-SUN: Closed</h4>
               
               <h3>Schedule A Tour Today!</h3>
             </div>
-            <div id="map">Map API goes here</div>
+            <div id="map"></div>
+              <script>
+                function initMap() {
+                  var uluru = {lat: 47.627378, lng: -122.186577};
+                  var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 14,
+                    center: uluru
+                  });
+                  var marker = new google.maps.Marker({
+                    position: uluru,
+                    map: map
+                  });
+                }
+              </script>
             
           </div>
         </div>
@@ -214,6 +244,9 @@
     <!-- Scrolling Nav JavaScript -->
     <script src="../../static/loginreg/js/jquery.easing.min.js"></script>
     <script src="../../static/loginreg/js/scrolling-nav.js"></script>
+
+    <!-- Google API Map JavaScript -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key={{ GOOGLE_API_KEY }}&callback=initMap"></script>
 
   </body>
 </html>

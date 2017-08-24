@@ -19,6 +19,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
+GOOGLE_API_KEY = os.environ['GOOGLE_API_KEY']
+
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '9z1ny#d-xck7a42+pd@za)e_i2flzph%4ym%o3)5mk!&pt2l7$'
 
